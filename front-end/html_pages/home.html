@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="author" content="Vu Anh Huy Nguyen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content=" ">
         <link rel="stylesheet" href="../css_sheet/home_style.css">
-    </head>
-    <body>
+</head>
+<body>
         <div class="container">
             <div class="logo">
                 <h2><a href="">Lena Spa</a></h2>
@@ -20,6 +20,45 @@
                 <li class="book"><a href="">Đặt Lịch</a></li>
             </ul>  
         </div>
-
-    </body>
+        <div class="slideshow_container">
+            <div class="slide fade">
+                <img src="" style="width: 100%;">
+            </div>
+            <div class="slide fade">
+                <img src="" style="width: 100%;">
+            </div>
+            <div class="slide fade">
+                <img src="" style="width: 100%;">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+</body>
+<script>
+    //set slide index to 0 as default
+    let slide_index = 0;
+    showSlides(); //initialize a function showSlides()
+    //Declare methods in the function
+    function showSlides() {
+        let index; 
+        // Get all elements with the class "slide" and "dot" respectively display in the slide show and navigation dots for the slides
+        let slides = document.getElementsByClassName("slide"); 
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); 
+        }
+</script>
 </html>
