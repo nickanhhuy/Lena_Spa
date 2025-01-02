@@ -61,18 +61,48 @@
     background:none;
 }
 .service_menu {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .service_menu h2 {
     margin: 150px 150px;
+    font-size: 35px;
 }
 .service_menu .service_details {
     margin: 80px 120px 50px 80px;
     font-size: 20px;
 }
-.all_treatment {
-
+.service_menu .service_prices {
+    margin: 80px 30px 10px 80px;
+    font-size: 20px;
 }
+.all_treatment {
+    text-align: center;
+}
+.all_treatment h2 {
+    margin: 150px 150px;
+    font-size: 35px;
+}
+.all_treatment .treatment_details {
+    margin: 10px 50px; 
+    font-size: 20px;
+}
+.all_treatment .treatment_details .first_line {
+    display:flex;
+    justify-content: center;
+}
+.all_treatment .treatment_details .first_line p {
+    margin: 0px 40px;
+}
+.all_treatment .treatment_details .second_line {
+    display:flex;
+    justify-content: center;
+}
+.all_treatment .treatment_details .second_line p {
+    margin: 10px 60px;
+}
+
 
 
 
