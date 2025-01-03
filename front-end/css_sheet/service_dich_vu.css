@@ -2,11 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(221, 194, 252);
-    color:rgb(48, 13, 84)
+    /* color:rgb(48, 13, 84) */
+    color:rgba(16, 83, 60, 0.975);
+}
+body {
+    /* background-color: rgb(221, 194, 252); */
+    background-color: rgb(204, 204, 204);
+    position:relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .logo {
     text-align: center;
+    font-size: 30px;
 }
 .container ul {
     margin: 20px;
@@ -17,7 +24,7 @@
     display: inline;
     padding: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,14 +33,14 @@
 }
 .container ul li a {
     text-decoration: none;
-    color:rgb(48, 13, 84);
+    color:rgba(16, 83, 60, 0.975);
 
 }
 .container ul li:after {
     content: '';
     height: 5px;
     width: 0;
-    background: rgb(48, 13, 84);
+    background: rgba(16, 83, 60, 0.975);
     position: absolute;
     left: 0;
     bottom: 5px;
@@ -58,30 +65,59 @@
     text-align: center;
     color: rgb(255, 205, 139);
     font-size: 100px;
-    background:none;
 }
 .service_menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    background-image: url("../images/second_line.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+
 }
 .service_menu h2 {
-    margin: 150px 150px;
+    flex: 0 1 30%; 
+    margin: 0; 
     font-size: 35px;
+    text-align: center; 
+   
 }
 .service_menu .service_details {
-    margin: 80px 120px 50px 80px;
-    font-size: 20px;
+    flex: 1;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 10px; 
+    margin: 0; 
 }
-.service_menu .service_prices {
-    margin: 80px 30px 10px 80px;
+
+.service_menu .service_details p {
+    text-align: center;
+    flex: 0 1 calc(50% - 50px); 
+    margin: 10px; 
+    padding: 20px; 
     font-size: 20px;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
 .all_treatment {
     text-align: center;
+    background-image: url("../images/first_line.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 20px 0px;
+    padding: 20px;
 }
 .all_treatment h2 {
-    margin: 150px 150px;
+    margin: 50px 150px;
     font-size: 35px;
 }
 .all_treatment .treatment_details {
@@ -93,7 +129,15 @@
     justify-content: center;
 }
 .all_treatment .treatment_details .first_line p {
-    margin: 0px 40px;
+    margin: 10px 50px;
+    padding: 40px;
+    /* background-color: rgba(201, 177, 231, 0.551);
+    border: 2px solid rgba(201, 177, 231, 0.882);
+    border-radius: 20px; */
+    border: 2px solid white; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 .all_treatment .treatment_details .second_line {
     display:flex;
@@ -101,6 +145,15 @@
 }
 .all_treatment .treatment_details .second_line p {
     margin: 10px 60px;
+    padding: 40px;
+    /* background-color: rgba(201, 177, 231, 0.551);
+    border: 2px solid rgba(201, 177, 231, 0.882);
+    border-radius: 20px; */
+    border: 2px solid white; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+
 }
 
 
