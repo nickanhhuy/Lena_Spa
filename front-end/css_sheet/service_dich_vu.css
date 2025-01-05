@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color:rgb(48, 13, 84) */
     color:rgba(16, 83, 60, 0.975);
 }
 body {
-    /* background-color: rgb(221, 194, 252); */
     background-color: rgb(204, 204, 204);
     position:relative;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -57,15 +55,17 @@ body {
     width: 100%;
     height: 300px;
     align-items: center;
-    display: flex;
+    display:flex;
     justify-content: center;
     overflow: hidden;
 }
 .menu_background h2{
     text-align: center;
     color: rgb(255, 205, 139);
-    font-size: 100px;
+    font-size: 80px;
+    margin: 20px;
 }
+
 .service_menu {
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ body {
 
 }
 .service_menu h2 {
-    flex: 0 1 30%; 
+    flex: 0 1 25%; 
     margin: 0; 
     font-size: 35px;
     text-align: center; 
@@ -129,11 +129,8 @@ body {
     justify-content: center;
 }
 .all_treatment .treatment_details .first_line p {
-    margin: 10px 50px;
+    margin: 10px 20px;
     padding: 40px;
-    /* background-color: rgba(201, 177, 231, 0.551);
-    border: 2px solid rgba(201, 177, 231, 0.882);
-    border-radius: 20px; */
     border: 2px solid white; 
     border-radius: 10px; 
     background-color: rgba(255, 255, 255, 0.8); 
@@ -144,18 +141,33 @@ body {
     justify-content: center;
 }
 .all_treatment .treatment_details .second_line p {
-    margin: 10px 60px;
-    padding: 40px;
-    /* background-color: rgba(201, 177, 231, 0.551);
-    border: 2px solid rgba(201, 177, 231, 0.882);
-    border-radius: 20px; */
+    margin: 10px 20px;
+    padding: 50px;
     border: 2px solid white; 
     border-radius: 10px; 
     background-color: rgba(255, 255, 255, 0.8); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 
 }
+footer {
+    background-image: linear-gradient(to bottom, #d0cea6, #ece0b5);
+    display: flex;
 
+}
+footer .contact {
+    flex: 0 1 40%;
+    margin: 20px 50px; 
+    font-size: 20px;
+}
+footer .open_hours {
+    flex: 1;
+    margin: 20px 40px;
+    font-size: 20px;
+}
+footer .open_hours ul, footer .contact ul {
+    list-style-type: none;
+    text-indent: 10px;
+}
 
 
 
